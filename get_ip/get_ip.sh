@@ -29,4 +29,4 @@ echo "line: ${array[0]}, data: ${array[1]}"
 #Substitute line found above and save current machine ip into header.sh
 $(sed -i "${array[0]}s/.*/export ip=\"${new_ip}\"/" header.sh)
 
-echo "new value: ip=\"${new_ip}\""
+echo "new value: export ip=\"${new_ip}\""
