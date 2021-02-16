@@ -1,8 +1,8 @@
 #! /bin/bash
-var="some value"
-#ip="I don't know what to put here"
-ip="I don't know what to put here"
-randomvar="random value"
+export var="some value"
+#export ip="I don't know what to put here"
+export ip="I don't know what to put here"
+export randomvar="random value"
 
 random_function() {
 
@@ -10,3 +10,4 @@ ip="test"
 
 }
 
+export -f random_function
